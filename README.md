@@ -12,6 +12,10 @@ Alura - Curso de Python 3: Introdução a Orientação a objetos
 - Encapsulamento de código
 
 ## Classe e Objeto
+> .Classe
+> .Objeto
+> .Referência
+
 1 - Uma classe é uma especificação de um tipo, definindo valores e comportamentos.
 
 2- Um objeto é uma instância de uma classe onde podemos definir valores para seus atributos.
@@ -41,4 +45,27 @@ Criando o objeto, guardando o retorno dentro da referência **conta**
 >>> conta
 <conta.Conta object at  0x10715fe10>
 ```
+### Construtor
+Função de construtor:
+> O Python constrói o objeto, cria um lugar na memória e depois chama a função __init__
+```python
+    def __init__(self):
+```
+**Self:** 
+- O Python cria automaticamente self
+- self é a referência que sabe encontrar o objeto construído em memória.
 
+Com o endereço, utilizaremos self para acessar o objeto e definir seus atributos e características. 
+```python
+class Conta:
+    def __init__(self, numero, titular, saldo, limite):
+        print("Construindo objeto...{}".format(self))
+        self.numero = numero
+        self.titular = titular
+        self.saldo = saldo
+        self.limite = limite
+
+# Passando os parâmetros    
+>>> from conta import Conta
+>>> conta = Conta(123, "Nico", 55.5, 1000.0)
+```
