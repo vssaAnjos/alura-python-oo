@@ -76,3 +76,19 @@ Acessando atributos dos objetos
 conta = Conta()
 conta.atributo1
 ```
+
+### Método
+Criando métodos
+```python
+class Conta:
+...
+def extrato(self):
+        print("Saldo {} do titular {}".format(self.saldo, self.titular))
+```
+Utilizando métodos
+```python
+conta = Conta()
+conta.extrato()
+>> Saldo 55.5 do titular Nico
+
+```
