@@ -69,3 +69,10 @@ class Conta:
 >>> from conta import Conta
 >>> conta = Conta(123, "Nico", 55.5, 1000.0)
 ```
+
+### Atributos
+Acessando atributos dos objetos
+```python
+conta = Conta()
+conta.atributo1
+```
