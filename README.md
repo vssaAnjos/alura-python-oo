@@ -99,3 +99,17 @@ Gargabe colletor
 
 None
 > "Com o uso do None, indicamos que a variável já não aponta para um objeto. A palavra None é equivalente a palavra-chave null nas linguagens C# ou Java"
+
+### Atributos privados
+
+Em algumas linguagens como Java, a palavra private define o atributo como **privado** e é chamado como modificador de visibilidade. Porém, em Python, foi convencionado o **uso __**. Com isso, nós renomeamos os atributos seguindo uma nomenclatura especial, por exemplo, numero passou a se chamar __numero.
+````python
+class Conta:
+
+    def __init__(self, numero, titular, saldo, limite):
+        print("Construindo objeto ... {}".format(self))
+        self.__numero = numero
+        self.__titular = titular 
+        self.__saldo = saldo
+        self.__limite = limite
+````
