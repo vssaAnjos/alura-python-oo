@@ -92,3 +92,10 @@ conta.extrato()
 >> Saldo 55.5 do titular Nico
 
 ```
+
+### None e coletor de lixo
+Gargabe colletor
+> "Quando criamos um programa, são gerados diversos objetos que em algum momento serão abandonados. Dentro da máquina virtual, na execução do Python, existe um processo que procura esses objetos esquecidos. Os itens inutilizados serão apagados e o espaço livre em memória será reutilizado. No caso, o responsável por jogar fora esses objetos em desuso é o coletor de lixo (garbage collector, em inglês) do Python"
+
+None
+> "Com o uso do None, indicamos que a variável já não aponta para um objeto. A palavra None é equivalente a palavra-chave null nas linguagens C# ou Java"
