@@ -16,4 +16,3 @@ class Conta:
 
     def sacar(self, valor):
         self.saldo -= valor
-
