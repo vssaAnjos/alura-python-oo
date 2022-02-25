@@ -9,10 +9,14 @@ class Conta:
         print("Objeto - {}".format(self.__titular))
 
     def extrato(self):
-        print("Saldo de {} do Titular {}".format(self.saldo, self.titular))
+        print("Saldo de {} do Titular {}".format(self.__saldo, self.__titular))
 
     def depositar(self, valor):
-        self.saldo += valor
+        self.__saldo += valor
 
     def sacar(self, valor):
-        self.saldo -= valor
+        self.__saldo -= valor
+
+    def transferir (self, valor, conta_origem, conta_destino):
+        conta_origem.sacar(valor)
+        conta_destino.depositar(valor)
