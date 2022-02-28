@@ -102,7 +102,9 @@ None
 
 ### Atributos privados
 
-Em algumas linguagens como Java, a palavra private define o atributo como **privado** e é chamado como modificador de visibilidade. Porém, em Python, foi convencionado o **uso __**. Com isso, nós renomeamos os atributos seguindo uma nomenclatura especial, por exemplo, numero passou a se chamar __numero.
+Em algumas linguagens como Java, a palavra private define o atributo como **privado** e é chamado como modificador de visibilidade. Porém, em Python, foi convencionado o uso de **__(undescore)**. Com isso, nós renomeamos os atributos seguindo uma nomenclatura especial, por exemplo, numero passou a se chamar __numero.
+Assim informamos para quem lê o código que esse atributo é privado. 
+obs: Porém o Python não impede que o atributo seja acesso diretamente. É apenas uma convensão.
 ````python
 class Conta:
 
