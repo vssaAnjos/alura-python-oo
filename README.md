@@ -113,3 +113,11 @@ class Conta:
         self.__saldo = saldo
         self.__limite = limite
 ````
+
+### Um pouco de SOLID
+- Pensar na coesão das responsabilidades dos métodos e atributos dentro de uma classe.
+- S - Single responsibility principle
+- O - Open/closed principle
+- L - Liskov substitution principle
+- I - Interface segregation principle
+- D - Dependency inversion principle
