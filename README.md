@@ -123,3 +123,18 @@ class Conta:
 - L - Liskov substitution principle
 - I - Interface segregation principle
 - D - Dependency inversion principle
+
+### Getters e Setters
+- Get
+```python
+# get
+def get_saldo(self):
+    return self.__saldo
+```
+
+- Set
+```python
+# set
+def set_limite(self, limite): 
+    self.__limite = limite
+```

@@ -20,3 +20,18 @@ class Conta:
     def transferir (self, valor, conta_origem, conta_destino):
         conta_origem.sacar(valor)
         conta_destino.depositar(valor)
+
+    def get_titular(self):
+        return self.__titular
+
+    def get_limite(self):
+        return self.__limite
+
+    def get_saldo(self):
+        return self.__saldo
+
+    def set_limite(self, limite):
+        self.__limite = limite
+
+    def set_saldo(self, saldo):
+        self.__saldo = saldo
