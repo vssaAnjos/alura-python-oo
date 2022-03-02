@@ -125,6 +125,7 @@ class Conta:
 - D - Dependency inversion principle
 
 ### Getters e Setters
+Criar getters e setters para acessar e alterar o valor de atributos privados
 - Get
 ```python
 # get
@@ -138,3 +139,25 @@ def get_saldo(self):
 def set_limite(self, limite): 
     self.__limite = limite
 ```
+
+### Property
+Para manter as funções mais concisa e legível, usamos as propriedades nos métodos get e set. Assim evitando colocaro prefixo 'get' e 'set'
+no nome dos métodos. 
+> Propriedades são elementos acessados externamente como se fossem atributos, mas que internamente (à classe), são manipulados por funções.
+
+No get:
+```python
+@property
+def saldo(self):
+    return self.__saldo
+```
+
+No set:
+```python
+@limite.setter
+def limite(self, limite):
+    self.__limite = limite
+```
+
+
+
