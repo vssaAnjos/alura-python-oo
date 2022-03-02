@@ -21,17 +21,22 @@ class Conta:
         conta_origem.sacar(valor)
         conta_destino.depositar(valor)
 
-    def get_titular(self):
+    @property
+    def titular(self):
         return self.__titular
 
-    def get_limite(self):
+    @property
+    def limite(self):
         return self.__limite
 
-    def get_saldo(self):
+    @property
+    def saldo(self):
         return self.__saldo
 
-    def set_limite(self, limite):
+    @limite.setter
+    def limite(self, limite):
         self.__limite = limite
 
-    def set_saldo(self, saldo):
+    @saldo.setter
+    def saldo(self, saldo):
         self.__saldo = saldo
