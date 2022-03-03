@@ -14,10 +14,17 @@ class Conta:
     def depositar(self, valor):
         self.__saldo += valor
 
-    def sacar(self, valor):
-        self.__saldo -= valor
+    def __validar_limite_saque(self, valor_a_sacar):
+        valor_disponivel_conta = (self.__saldo + self.__limite)
+        return valor_a_sacar <= valor_disponivel_conta
 
-    def transferir (self, valor, conta_origem, conta_destino):
+    def sacar(self, valor):
+        if self.__validar_limite_saque(valor):
+            self.__saldo -= valor
+        else:
+            print("O valor {} passou o limite.".format(valor))
+
+    def transferir(self, valor, conta_origem, conta_destino):
         conta_origem.sacar(valor)
         conta_destino.depositar(valor)
 

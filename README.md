@@ -158,6 +158,12 @@ No set:
 def limite(self, limite):
     self.__limite = limite
 ```
-
+### Método Privado
+Usar **__** no nome do método para idenfificar que o método é privado.
+```python
+    def __validar_limite_saque(self, valor_a_sacar):
+        valor_disponivel_conta = (self.__saldo + self.__limite)
+        return valor_a_sacar <= valor_disponivel_conta
+```
 
 
