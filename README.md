@@ -159,11 +159,21 @@ def limite(self, limite):
     self.__limite = limite
 ```
 ### Método Privado
-Usar **__** no nome do método para idenfificar que o método é privado.
+Usar **__** no nome do método para idenfificar que o método é privado, seguindo a convenção do Python.
 ```python
     def __validar_limite_saque(self, valor_a_sacar):
         valor_disponivel_conta = (self.__saldo + self.__limite)
         return valor_a_sacar <= valor_disponivel_conta
 ```
 
+### Métodos da classe
+**Método estáticos**
+Métodos estáticos que são da classe, e mesmo sem o objeto, conseguimos executar o método. 
+
+Exemplo:
+````python
+@staticmethod
+    def codigos_bancos():
+        return {'BB':'001', 'Caixa':'104', 'Bradesco': '237'}
+````
 
