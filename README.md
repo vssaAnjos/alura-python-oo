@@ -167,13 +167,30 @@ Usar **__** no nome do método para idenfificar que o método é privado, seguin
 ```
 
 ### Métodos da classe
-**Método estáticos**
-Métodos estáticos que são da classe, e mesmo sem o objeto, conseguimos executar o método. 
-
+**Método estáticos:**
+Os métodos estáticos que podem ser chamados a partir da classe, sem ter um objeto criado.
 Exemplo:
 ````python
-@staticmethod
-    def codigos_bancos():
-        return {'BB':'001', 'Caixa':'104', 'Bradesco': '237'}
+class Circulo:
+
+    @staticmethod
+    def obter_pi():
+        return 3.14 
+````
+> OBS: Métodos estáticos tem um cheiro de linguagem procedural já que independe de um objeto para ser chamado e não manipula informações/atributos de objetos. Deve ser usado com bastante cautela!
+
+````pythonE agora podemos usar esse método estático a partir da classe:
+Circulo.obter_pi()
+3.14
 ````
 
+**Atributos estáticos:**
+````python
+class Circulo:
+    PI = 3.14
+````
+Repare que não usamos self e o atributo nem foi definido dentro do __init__. O atributo faz parte da classe, ou seja, é um atributo estático que pode ser usado sem ter criado um objeto. Veja como fica simples:
+```python
+Circulo.PI
+3.14
+```
