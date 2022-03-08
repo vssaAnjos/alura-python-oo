@@ -1,7 +1,7 @@
 # alura-python-oo
 Alura - Curso de Python 3: Introdução a Orientação a objetos
 
-# Python 3
+# Python 3 - Intro à orientação a objetos
 > Nesse curso foi apresentado os fundamentos do paradigma da Orientação a Objetos. Vimos como definir classes e quais são os membros delas como atributos, métodos e construtores. Aprendemos que as classes servem como planta para criar objetos e os métodos encapsulam a implementação. 
 
 ## Procedural vs Orientação a Objetos
@@ -196,3 +196,6 @@ Repare que não usamos self e o atributo nem foi definido dentro do __init__. O 
 Circulo.PI
 3.14
 ```
+
+# Python 3 - Avançando em Orientação a objetos
+> Abordar tópicos mais avançados como herança, polimorfismo, duck typing entre outros assuntos da Orientação a Objetos
